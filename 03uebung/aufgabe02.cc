@@ -6,7 +6,7 @@ namespace power{
 	
 	int iterative(int q, unsigned int n){//Funktionsaufruf
 		int c = q;
-		while(n > 1){ //es wird n-1 Mal mit q multipliziert
+		while(n > 1){ //es wird n Mal mit q multipliziert, da im Prinzip im ersten Schritt schon q * q gemacht wird, schreibt man n > 1 in die Bedingung
 			n--;
 			c = q * c;
 		}
