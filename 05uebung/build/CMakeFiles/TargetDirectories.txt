@@ -1,5 +1,8 @@
 /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/rebuild_cache.dir
 /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/edit_cache.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/test.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/mean_test.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/median_test.dir
 /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/normal.dir
 /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/uniform.dir
 /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/readvector.dir

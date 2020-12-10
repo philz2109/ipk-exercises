@@ -1,0 +1,2 @@
+Die Laufzeit der beiden Programme unterscheidet sich für den Cmake-Build-typ Release und None um ganze 2 Sekunden, wobei sich die user Zeit um ca 0,2 Sekunden unterscheidet
+Das heißt das bei dem Buildtyp Release die reine Laufzeit 0,2 Sekunden länger war.

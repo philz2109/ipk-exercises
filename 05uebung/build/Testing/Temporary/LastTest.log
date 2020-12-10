@@ -1,0 +1,45 @@
+Start testing: Dec 10 19:22 CET
+----------------------------------------------------------
+1/2 Testing: mean_test
+1/2 Test: mean_test
+Command: "/home/blackfire/Documents/ipk-exercises/05uebung/build/mean_test"
+Directory: /home/blackfire/Documents/ipk-exercises/05uebung/build
+"mean_test" start time: Dec 10 19:22 CET
+Output:
+----------------------------------------------------------
+95.5172
+101.681
+114.097
+77.9878
+107.807
+Mittelwert: 99.4181
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"mean_test" end time: Dec 10 19:22 CET
+"mean_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: median_test
+2/2 Test: median_test
+Command: "/home/blackfire/Documents/ipk-exercises/05uebung/build/median_test"
+Directory: /home/blackfire/Documents/ipk-exercises/05uebung/build
+"median_test" start time: Dec 10 19:22 CET
+Output:
+----------------------------------------------------------
+95.5172
+101.681
+114.097
+77.9878
+107.807
+Median: 101.681
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"median_test" end time: Dec 10 19:22 CET
+"median_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 10 19:22 CET

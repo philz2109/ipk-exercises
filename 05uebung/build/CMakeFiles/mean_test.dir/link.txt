@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/mean_test.dir/mean_test.cc.o  -o mean_test  liblib.a 

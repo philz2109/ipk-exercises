@@ -1,0 +1,5 @@
+mean_test 2 0
+median_test 2 0
+---
+mean_test
+median_test

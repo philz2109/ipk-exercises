@@ -41,6 +41,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/mean_test.dir/DependInfo.cmake"
+  "CMakeFiles/median_test.dir/DependInfo.cmake"
   "CMakeFiles/normal.dir/DependInfo.cmake"
   "CMakeFiles/uniform.dir/DependInfo.cmake"
   "CMakeFiles/readvector.dir/DependInfo.cmake"

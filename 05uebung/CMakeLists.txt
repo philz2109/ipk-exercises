@@ -12,3 +12,12 @@ add_executable(uniform uniform.cc)
 target_link_libraries(uniform PUBLIC lib)
 add_executable(normal normal.cc)
 target_link_libraries(normal PUBLIC lib)
+
+enable_testing()
+
+add_executable(mean_test mean_test.cc)
+target_link_libraries(mean_test PUBLIC lib)
+add_test(NAME mean_test COMMAND mean_test)
+add_executable(median_test median_test.cc)
+target_link_libraries(median_test PUBLIC lib)
+add_test(NAME median_test COMMAND median_test)

@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/progress.marks
@@ -109,6 +120,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named mean_test
+
+# Build rule for target.
+mean_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mean_test
+.PHONY : mean_test
+
+# fast build rule for target.
+mean_test/fast:
+	$(MAKE) -f CMakeFiles/mean_test.dir/build.make CMakeFiles/mean_test.dir/build
+.PHONY : mean_test/fast
+
+#=============================================================================
+# Target rules for targets named median_test
+
+# Build rule for target.
+median_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 median_test
+.PHONY : median_test
+
+# fast build rule for target.
+median_test/fast:
+	$(MAKE) -f CMakeFiles/median_test.dir/build.make CMakeFiles/median_test.dir/build
+.PHONY : median_test/fast
 
 #=============================================================================
 # Target rules for targets named normal
@@ -188,6 +225,60 @@ io.s: io.cc.s
 io.cc.s:
 	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/io.cc.s
 .PHONY : io.cc.s
+
+mean_test.o: mean_test.cc.o
+
+.PHONY : mean_test.o
+
+# target to build an object file
+mean_test.cc.o:
+	$(MAKE) -f CMakeFiles/mean_test.dir/build.make CMakeFiles/mean_test.dir/mean_test.cc.o
+.PHONY : mean_test.cc.o
+
+mean_test.i: mean_test.cc.i
+
+.PHONY : mean_test.i
+
+# target to preprocess a source file
+mean_test.cc.i:
+	$(MAKE) -f CMakeFiles/mean_test.dir/build.make CMakeFiles/mean_test.dir/mean_test.cc.i
+.PHONY : mean_test.cc.i
+
+mean_test.s: mean_test.cc.s
+
+.PHONY : mean_test.s
+
+# target to generate assembly for a file
+mean_test.cc.s:
+	$(MAKE) -f CMakeFiles/mean_test.dir/build.make CMakeFiles/mean_test.dir/mean_test.cc.s
+.PHONY : mean_test.cc.s
+
+median_test.o: median_test.cc.o
+
+.PHONY : median_test.o
+
+# target to build an object file
+median_test.cc.o:
+	$(MAKE) -f CMakeFiles/median_test.dir/build.make CMakeFiles/median_test.dir/median_test.cc.o
+.PHONY : median_test.cc.o
+
+median_test.i: median_test.cc.i
+
+.PHONY : median_test.i
+
+# target to preprocess a source file
+median_test.cc.i:
+	$(MAKE) -f CMakeFiles/median_test.dir/build.make CMakeFiles/median_test.dir/median_test.cc.i
+.PHONY : median_test.cc.i
+
+median_test.s: median_test.cc.s
+
+.PHONY : median_test.s
+
+# target to generate assembly for a file
+median_test.cc.s:
+	$(MAKE) -f CMakeFiles/median_test.dir/build.make CMakeFiles/median_test.dir/median_test.cc.s
+.PHONY : median_test.cc.s
 
 normal.o: normal.cc.o
 
@@ -305,6 +396,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... mean_test"
+	@echo "... median_test"
 	@echo "... normal"
 	@echo "... uniform"
 	@echo "... readvector"
@@ -312,6 +406,12 @@ help:
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"
+	@echo "... mean_test.o"
+	@echo "... mean_test.i"
+	@echo "... mean_test.s"
+	@echo "... median_test.o"
+	@echo "... median_test.i"
+	@echo "... median_test.s"
 	@echo "... normal.o"
 	@echo "... normal.i"
 	@echo "... normal.s"
