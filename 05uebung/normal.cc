@@ -10,8 +10,8 @@ int main(int argc, char *argv[]){
 	std::cout << a << std::endl;
 	}
 	
-	int k; //Einlesen k
-	std::cin >> k;
+	int k = 2; //Einlesen k
+	//std::cin >> k;
 	
 	std::cout << "Mittelwert: " << mean(v) << std::endl; //Ausgabe implementierter Statistiken
 	std::cout << "Median: " << median(v) << std::endl;
