@@ -1,0 +1,6 @@
+Erst CMakeLists.txt erstellen. (bei den Programmen)
+mkdir build       (erstelle build)
+cd build          (gehe in den Ordner)
+cmake <pfad-zum-verzeichnis-mit-cmakelists.txt>  (im build-Ordner ausführen)
+make (Starte Build-Prozess)
+Jetzt normal in diesem Ordner Programme ausführen
