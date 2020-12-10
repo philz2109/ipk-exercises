@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib.a  CMakeFiles/lib.dir/io.cc.o CMakeFiles/lib.dir/statistics.cc.o
+/usr/bin/ranlib liblib.a

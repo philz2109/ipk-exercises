@@ -4,7 +4,8 @@
 #include <vector>
 
 int main(int argc, char *argv[]){
-	std::vector<double> v = normal_distribution(random_seed(), 10, 100, 20); //Bildung Vektor
+	long long a = 10*10*10*10*10*10;
+	std::vector<double> v = normal_distribution(random_seed(), a, 100, 20); //Bildung Vektor
 	for(auto a : v){ //Ausgabe Vektor
 	std::cout << a << std::endl;
 	}

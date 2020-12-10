@@ -1,0 +1,6 @@
+/home/blackfire/Documents/ipk-exercises/05uebung/release-build/CMakeFiles/rebuild_cache.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/release-build/CMakeFiles/edit_cache.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/release-build/CMakeFiles/normal.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/release-build/CMakeFiles/uniform.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/release-build/CMakeFiles/readvector.dir
+/home/blackfire/Documents/ipk-exercises/05uebung/release-build/CMakeFiles/lib.dir
