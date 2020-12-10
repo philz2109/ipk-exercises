@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/philz/Documents/ipk-exercises/05uebung
+CMAKE_SOURCE_DIR = /home/blackfire/Documents/ipk-exercises/05uebung
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/philz/Documents/ipk-exercises/05uebung/build
+CMAKE_BINARY_DIR = /home/blackfire/Documents/ipk-exercises/05uebung/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles /home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,15 +149,26 @@ readvector/fast:
 	$(MAKE) -f CMakeFiles/readvector.dir/build.make CMakeFiles/readvector.dir/build
 .PHONY : readvector/fast
 
+#=============================================================================
+# Target rules for targets named lib
+
+# Build rule for target.
+lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib
+.PHONY : lib
+
+# fast build rule for target.
+lib/fast:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
+.PHONY : lib/fast
+
 io.o: io.cc.o
 
 .PHONY : io.o
 
 # target to build an object file
 io.cc.o:
-	$(MAKE) -f CMakeFiles/normal.dir/build.make CMakeFiles/normal.dir/io.cc.o
-	$(MAKE) -f CMakeFiles/uniform.dir/build.make CMakeFiles/uniform.dir/io.cc.o
-	$(MAKE) -f CMakeFiles/readvector.dir/build.make CMakeFiles/readvector.dir/io.cc.o
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/io.cc.o
 .PHONY : io.cc.o
 
 io.i: io.cc.i
@@ -166,9 +177,7 @@ io.i: io.cc.i
 
 # target to preprocess a source file
 io.cc.i:
-	$(MAKE) -f CMakeFiles/normal.dir/build.make CMakeFiles/normal.dir/io.cc.i
-	$(MAKE) -f CMakeFiles/uniform.dir/build.make CMakeFiles/uniform.dir/io.cc.i
-	$(MAKE) -f CMakeFiles/readvector.dir/build.make CMakeFiles/readvector.dir/io.cc.i
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/io.cc.i
 .PHONY : io.cc.i
 
 io.s: io.cc.s
@@ -177,9 +186,7 @@ io.s: io.cc.s
 
 # target to generate assembly for a file
 io.cc.s:
-	$(MAKE) -f CMakeFiles/normal.dir/build.make CMakeFiles/normal.dir/io.cc.s
-	$(MAKE) -f CMakeFiles/uniform.dir/build.make CMakeFiles/uniform.dir/io.cc.s
-	$(MAKE) -f CMakeFiles/readvector.dir/build.make CMakeFiles/readvector.dir/io.cc.s
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/io.cc.s
 .PHONY : io.cc.s
 
 normal.o: normal.cc.o
@@ -242,9 +249,7 @@ statistics.o: statistics.cc.o
 
 # target to build an object file
 statistics.cc.o:
-	$(MAKE) -f CMakeFiles/normal.dir/build.make CMakeFiles/normal.dir/statistics.cc.o
-	$(MAKE) -f CMakeFiles/uniform.dir/build.make CMakeFiles/uniform.dir/statistics.cc.o
-	$(MAKE) -f CMakeFiles/readvector.dir/build.make CMakeFiles/readvector.dir/statistics.cc.o
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/statistics.cc.o
 .PHONY : statistics.cc.o
 
 statistics.i: statistics.cc.i
@@ -253,9 +258,7 @@ statistics.i: statistics.cc.i
 
 # target to preprocess a source file
 statistics.cc.i:
-	$(MAKE) -f CMakeFiles/normal.dir/build.make CMakeFiles/normal.dir/statistics.cc.i
-	$(MAKE) -f CMakeFiles/uniform.dir/build.make CMakeFiles/uniform.dir/statistics.cc.i
-	$(MAKE) -f CMakeFiles/readvector.dir/build.make CMakeFiles/readvector.dir/statistics.cc.i
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/statistics.cc.i
 .PHONY : statistics.cc.i
 
 statistics.s: statistics.cc.s
@@ -264,9 +267,7 @@ statistics.s: statistics.cc.s
 
 # target to generate assembly for a file
 statistics.cc.s:
-	$(MAKE) -f CMakeFiles/normal.dir/build.make CMakeFiles/normal.dir/statistics.cc.s
-	$(MAKE) -f CMakeFiles/uniform.dir/build.make CMakeFiles/uniform.dir/statistics.cc.s
-	$(MAKE) -f CMakeFiles/readvector.dir/build.make CMakeFiles/readvector.dir/statistics.cc.s
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/statistics.cc.s
 .PHONY : statistics.cc.s
 
 uniform.o: uniform.cc.o
@@ -307,6 +308,7 @@ help:
 	@echo "... normal"
 	@echo "... uniform"
 	@echo "... readvector"
+	@echo "... lib"
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"

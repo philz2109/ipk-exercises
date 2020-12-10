@@ -4,6 +4,11 @@ project(aufgabe02 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDART 14)
 
-add_executable(readvector io.cc statistics.cc readvector.cc)
-add_executable(uniform io.cc statistics.cc uniform.cc)
-add_executable(normal io.cc statistics.cc normal.cc)
+add_library(lib io.cc statistics.cc)
+
+add_executable(readvector readvector.cc)
+target_link_libraries(readvector PUBLIC lib)
+add_executable(uniform uniform.cc)
+target_link_libraries(uniform PUBLIC lib)
+add_executable(normal normal.cc)
+target_link_libraries(normal PUBLIC lib)

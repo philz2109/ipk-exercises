@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/philz/Documents/ipk-exercises/05uebung
+CMAKE_SOURCE_DIR = /home/blackfire/Documents/ipk-exercises/05uebung
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/philz/Documents/ipk-exercises/05uebung/build
+CMAKE_BINARY_DIR = /home/blackfire/Documents/ipk-exercises/05uebung/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/normal.dir/depend.make
@@ -57,60 +57,31 @@ include CMakeFiles/normal.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/normal.dir/flags.make
 
-CMakeFiles/normal.dir/io.cc.o: CMakeFiles/normal.dir/flags.make
-CMakeFiles/normal.dir/io.cc.o: ../io.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/normal.dir/io.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/normal.dir/io.cc.o -c /home/philz/Documents/ipk-exercises/05uebung/io.cc
-
-CMakeFiles/normal.dir/io.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/normal.dir/io.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/philz/Documents/ipk-exercises/05uebung/io.cc > CMakeFiles/normal.dir/io.cc.i
-
-CMakeFiles/normal.dir/io.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/normal.dir/io.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/philz/Documents/ipk-exercises/05uebung/io.cc -o CMakeFiles/normal.dir/io.cc.s
-
-CMakeFiles/normal.dir/statistics.cc.o: CMakeFiles/normal.dir/flags.make
-CMakeFiles/normal.dir/statistics.cc.o: ../statistics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/normal.dir/statistics.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/normal.dir/statistics.cc.o -c /home/philz/Documents/ipk-exercises/05uebung/statistics.cc
-
-CMakeFiles/normal.dir/statistics.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/normal.dir/statistics.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/philz/Documents/ipk-exercises/05uebung/statistics.cc > CMakeFiles/normal.dir/statistics.cc.i
-
-CMakeFiles/normal.dir/statistics.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/normal.dir/statistics.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/philz/Documents/ipk-exercises/05uebung/statistics.cc -o CMakeFiles/normal.dir/statistics.cc.s
-
 CMakeFiles/normal.dir/normal.cc.o: CMakeFiles/normal.dir/flags.make
 CMakeFiles/normal.dir/normal.cc.o: ../normal.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/normal.dir/normal.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/normal.dir/normal.cc.o -c /home/philz/Documents/ipk-exercises/05uebung/normal.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/normal.dir/normal.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/normal.dir/normal.cc.o -c /home/blackfire/Documents/ipk-exercises/05uebung/normal.cc
 
 CMakeFiles/normal.dir/normal.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/normal.dir/normal.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/philz/Documents/ipk-exercises/05uebung/normal.cc > CMakeFiles/normal.dir/normal.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blackfire/Documents/ipk-exercises/05uebung/normal.cc > CMakeFiles/normal.dir/normal.cc.i
 
 CMakeFiles/normal.dir/normal.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/normal.dir/normal.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/philz/Documents/ipk-exercises/05uebung/normal.cc -o CMakeFiles/normal.dir/normal.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blackfire/Documents/ipk-exercises/05uebung/normal.cc -o CMakeFiles/normal.dir/normal.cc.s
 
 # Object files for target normal
 normal_OBJECTS = \
-"CMakeFiles/normal.dir/io.cc.o" \
-"CMakeFiles/normal.dir/statistics.cc.o" \
 "CMakeFiles/normal.dir/normal.cc.o"
 
 # External object files for target normal
 normal_EXTERNAL_OBJECTS =
 
-normal: CMakeFiles/normal.dir/io.cc.o
-normal: CMakeFiles/normal.dir/statistics.cc.o
 normal: CMakeFiles/normal.dir/normal.cc.o
 normal: CMakeFiles/normal.dir/build.make
+normal: liblib.a
 normal: CMakeFiles/normal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable normal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable normal"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/normal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +94,6 @@ CMakeFiles/normal.dir/clean:
 .PHONY : CMakeFiles/normal.dir/clean
 
 CMakeFiles/normal.dir/depend:
-	cd /home/philz/Documents/ipk-exercises/05uebung/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/philz/Documents/ipk-exercises/05uebung /home/philz/Documents/ipk-exercises/05uebung /home/philz/Documents/ipk-exercises/05uebung/build /home/philz/Documents/ipk-exercises/05uebung/build /home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles/normal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blackfire/Documents/ipk-exercises/05uebung/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blackfire/Documents/ipk-exercises/05uebung /home/blackfire/Documents/ipk-exercises/05uebung /home/blackfire/Documents/ipk-exercises/05uebung/build /home/blackfire/Documents/ipk-exercises/05uebung/build /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/normal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/normal.dir/depend
 

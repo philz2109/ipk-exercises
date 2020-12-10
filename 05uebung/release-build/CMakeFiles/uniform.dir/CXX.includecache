@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blackfire/Documents/ipk-exercises/05uebung/io.hh
+vector
+-
+
+/home/blackfire/Documents/ipk-exercises/05uebung/statistics.hh
+vector
+-
+iostream
+-
+
+/home/blackfire/Documents/ipk-exercises/05uebung/uniform.cc
+io.hh
+/home/blackfire/Documents/ipk-exercises/05uebung/io.hh
+statistics.hh
+/home/blackfire/Documents/ipk-exercises/05uebung/statistics.hh
+iostream
+-
+vector
+-
+

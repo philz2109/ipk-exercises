@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/philz/Documents/ipk-exercises/05uebung
+CMAKE_SOURCE_DIR = /home/blackfire/Documents/ipk-exercises/05uebung
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/philz/Documents/ipk-exercises/05uebung/build
+CMAKE_BINARY_DIR = /home/blackfire/Documents/ipk-exercises/05uebung/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/uniform.dir/depend.make
@@ -57,60 +57,31 @@ include CMakeFiles/uniform.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/uniform.dir/flags.make
 
-CMakeFiles/uniform.dir/io.cc.o: CMakeFiles/uniform.dir/flags.make
-CMakeFiles/uniform.dir/io.cc.o: ../io.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uniform.dir/io.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uniform.dir/io.cc.o -c /home/philz/Documents/ipk-exercises/05uebung/io.cc
-
-CMakeFiles/uniform.dir/io.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uniform.dir/io.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/philz/Documents/ipk-exercises/05uebung/io.cc > CMakeFiles/uniform.dir/io.cc.i
-
-CMakeFiles/uniform.dir/io.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uniform.dir/io.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/philz/Documents/ipk-exercises/05uebung/io.cc -o CMakeFiles/uniform.dir/io.cc.s
-
-CMakeFiles/uniform.dir/statistics.cc.o: CMakeFiles/uniform.dir/flags.make
-CMakeFiles/uniform.dir/statistics.cc.o: ../statistics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uniform.dir/statistics.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uniform.dir/statistics.cc.o -c /home/philz/Documents/ipk-exercises/05uebung/statistics.cc
-
-CMakeFiles/uniform.dir/statistics.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uniform.dir/statistics.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/philz/Documents/ipk-exercises/05uebung/statistics.cc > CMakeFiles/uniform.dir/statistics.cc.i
-
-CMakeFiles/uniform.dir/statistics.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uniform.dir/statistics.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/philz/Documents/ipk-exercises/05uebung/statistics.cc -o CMakeFiles/uniform.dir/statistics.cc.s
-
 CMakeFiles/uniform.dir/uniform.cc.o: CMakeFiles/uniform.dir/flags.make
 CMakeFiles/uniform.dir/uniform.cc.o: ../uniform.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uniform.dir/uniform.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uniform.dir/uniform.cc.o -c /home/philz/Documents/ipk-exercises/05uebung/uniform.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uniform.dir/uniform.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uniform.dir/uniform.cc.o -c /home/blackfire/Documents/ipk-exercises/05uebung/uniform.cc
 
 CMakeFiles/uniform.dir/uniform.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uniform.dir/uniform.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/philz/Documents/ipk-exercises/05uebung/uniform.cc > CMakeFiles/uniform.dir/uniform.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blackfire/Documents/ipk-exercises/05uebung/uniform.cc > CMakeFiles/uniform.dir/uniform.cc.i
 
 CMakeFiles/uniform.dir/uniform.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uniform.dir/uniform.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/philz/Documents/ipk-exercises/05uebung/uniform.cc -o CMakeFiles/uniform.dir/uniform.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blackfire/Documents/ipk-exercises/05uebung/uniform.cc -o CMakeFiles/uniform.dir/uniform.cc.s
 
 # Object files for target uniform
 uniform_OBJECTS = \
-"CMakeFiles/uniform.dir/io.cc.o" \
-"CMakeFiles/uniform.dir/statistics.cc.o" \
 "CMakeFiles/uniform.dir/uniform.cc.o"
 
 # External object files for target uniform
 uniform_EXTERNAL_OBJECTS =
 
-uniform: CMakeFiles/uniform.dir/io.cc.o
-uniform: CMakeFiles/uniform.dir/statistics.cc.o
 uniform: CMakeFiles/uniform.dir/uniform.cc.o
 uniform: CMakeFiles/uniform.dir/build.make
+uniform: liblib.a
 uniform: CMakeFiles/uniform.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable uniform"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable uniform"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uniform.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +94,6 @@ CMakeFiles/uniform.dir/clean:
 .PHONY : CMakeFiles/uniform.dir/clean
 
 CMakeFiles/uniform.dir/depend:
-	cd /home/philz/Documents/ipk-exercises/05uebung/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/philz/Documents/ipk-exercises/05uebung /home/philz/Documents/ipk-exercises/05uebung /home/philz/Documents/ipk-exercises/05uebung/build /home/philz/Documents/ipk-exercises/05uebung/build /home/philz/Documents/ipk-exercises/05uebung/build/CMakeFiles/uniform.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blackfire/Documents/ipk-exercises/05uebung/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blackfire/Documents/ipk-exercises/05uebung /home/blackfire/Documents/ipk-exercises/05uebung /home/blackfire/Documents/ipk-exercises/05uebung/build /home/blackfire/Documents/ipk-exercises/05uebung/build /home/blackfire/Documents/ipk-exercises/05uebung/build/CMakeFiles/uniform.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uniform.dir/depend
 
