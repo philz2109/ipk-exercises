@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/uniform.dir/io.cc.o CMakeFiles/uniform.dir/statistics.cc.o CMakeFiles/uniform.dir/uniform.cc.o  -o uniform 

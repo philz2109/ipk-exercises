@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/readvector.dir/io.cc.o CMakeFiles/readvector.dir/statistics.cc.o CMakeFiles/readvector.dir/readvector.cc.o  -o readvector 
