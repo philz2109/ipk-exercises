@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blackfire/Documents/ipk-exercises/06uebung/point.hh
+
+/home/blackfire/Documents/ipk-exercises/06uebung/polygon.cc
+polygon.hh
+/home/blackfire/Documents/ipk-exercises/06uebung/polygon.hh
+iostream
+-
+
+/home/blackfire/Documents/ipk-exercises/06uebung/polygon.hh
+vector
+-
+cmath
+-
+point.hh
+/home/blackfire/Documents/ipk-exercises/06uebung/point.hh
+
