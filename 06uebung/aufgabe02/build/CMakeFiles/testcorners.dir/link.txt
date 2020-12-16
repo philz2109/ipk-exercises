@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testcorners.dir/testcorners.cpp.o  -o testcorners  liblib.a 

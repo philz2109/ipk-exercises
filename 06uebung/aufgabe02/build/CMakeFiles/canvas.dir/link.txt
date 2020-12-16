@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/canvas.dir/canvas.cpp.o  -o canvas  liblib.a 
