@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/canvas.cpp" "/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/lib.dir/canvas.cpp.o"
   "/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/pgm.cc" "/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/lib.dir/pgm.cc.o"
   "/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/point.cc" "/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/lib.dir/point.cc.o"
   )

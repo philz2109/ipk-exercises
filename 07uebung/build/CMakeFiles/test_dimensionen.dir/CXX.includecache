@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blackfire/Documents/ipk-exercises/07uebung/point.hh
+array
+-
+cmath
+-
+
+/home/blackfire/Documents/ipk-exercises/07uebung/test_dimensionen.cc
+point.hh
+/home/blackfire/Documents/ipk-exercises/07uebung/point.hh
+iostream
+-
+cmath
+-
+

@@ -1,0 +1,5 @@
+/home/blackfire/Documents/ipk-exercises/07uebung/build/CMakeFiles/rebuild_cache.dir
+/home/blackfire/Documents/ipk-exercises/07uebung/build/CMakeFiles/edit_cache.dir
+/home/blackfire/Documents/ipk-exercises/07uebung/build/CMakeFiles/test.dir
+/home/blackfire/Documents/ipk-exercises/07uebung/build/CMakeFiles/test_dimensionen.dir
+/home/blackfire/Documents/ipk-exercises/07uebung/build/CMakeFiles/statisticsdriver.dir

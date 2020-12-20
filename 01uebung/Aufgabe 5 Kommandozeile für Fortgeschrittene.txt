@@ -1,0 +1,2 @@
+(a) find /usr/include/ -name "*.h" | wc -l
+(b) Keine Ahnung, kein Bock mehr darauf

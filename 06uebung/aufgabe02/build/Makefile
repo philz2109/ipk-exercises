@@ -135,17 +135,17 @@ testcorners/fast:
 .PHONY : testcorners/fast
 
 #=============================================================================
-# Target rules for targets named canvas
+# Target rules for targets named plot
 
 # Build rule for target.
-canvas: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 canvas
-.PHONY : canvas
+plot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 plot
+.PHONY : plot
 
 # fast build rule for target.
-canvas/fast:
-	$(MAKE) -f CMakeFiles/canvas.dir/build.make CMakeFiles/canvas.dir/build
-.PHONY : canvas/fast
+plot/fast:
+	$(MAKE) -f CMakeFiles/plot.dir/build.make CMakeFiles/plot.dir/build
+.PHONY : plot/fast
 
 #=============================================================================
 # Target rules for targets named lib
@@ -166,7 +166,7 @@ canvas.o: canvas.cpp.o
 
 # target to build an object file
 canvas.cpp.o:
-	$(MAKE) -f CMakeFiles/canvas.dir/build.make CMakeFiles/canvas.dir/canvas.cpp.o
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/canvas.cpp.o
 .PHONY : canvas.cpp.o
 
 canvas.i: canvas.cpp.i
@@ -175,7 +175,7 @@ canvas.i: canvas.cpp.i
 
 # target to preprocess a source file
 canvas.cpp.i:
-	$(MAKE) -f CMakeFiles/canvas.dir/build.make CMakeFiles/canvas.dir/canvas.cpp.i
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/canvas.cpp.i
 .PHONY : canvas.cpp.i
 
 canvas.s: canvas.cpp.s
@@ -184,7 +184,7 @@ canvas.s: canvas.cpp.s
 
 # target to generate assembly for a file
 canvas.cpp.s:
-	$(MAKE) -f CMakeFiles/canvas.dir/build.make CMakeFiles/canvas.dir/canvas.cpp.s
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/canvas.cpp.s
 .PHONY : canvas.cpp.s
 
 pgm.o: pgm.cc.o
@@ -213,6 +213,33 @@ pgm.s: pgm.cc.s
 pgm.cc.s:
 	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/pgm.cc.s
 .PHONY : pgm.cc.s
+
+plot.o: plot.cc.o
+
+.PHONY : plot.o
+
+# target to build an object file
+plot.cc.o:
+	$(MAKE) -f CMakeFiles/plot.dir/build.make CMakeFiles/plot.dir/plot.cc.o
+.PHONY : plot.cc.o
+
+plot.i: plot.cc.i
+
+.PHONY : plot.i
+
+# target to preprocess a source file
+plot.cc.i:
+	$(MAKE) -f CMakeFiles/plot.dir/build.make CMakeFiles/plot.dir/plot.cc.i
+.PHONY : plot.cc.i
+
+plot.s: plot.cc.s
+
+.PHONY : plot.s
+
+# target to generate assembly for a file
+plot.cc.s:
+	$(MAKE) -f CMakeFiles/plot.dir/build.make CMakeFiles/plot.dir/plot.cc.s
+.PHONY : plot.cc.s
 
 point.o: point.cc.o
 
@@ -275,10 +302,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... testcorners"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... canvas"
+	@echo "... testcorners"
+	@echo "... plot"
 	@echo "... lib"
 	@echo "... canvas.o"
 	@echo "... canvas.i"
@@ -286,6 +313,9 @@ help:
 	@echo "... pgm.o"
 	@echo "... pgm.i"
 	@echo "... pgm.s"
+	@echo "... plot.o"
+	@echo "... plot.i"
+	@echo "... plot.s"
 	@echo "... point.o"
 	@echo "... point.i"
 	@echo "... point.s"

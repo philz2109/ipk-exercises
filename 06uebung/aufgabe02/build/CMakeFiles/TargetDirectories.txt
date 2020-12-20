@@ -1,6 +1,6 @@
 /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/rebuild_cache.dir
-/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/testcorners.dir
 /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/edit_cache.dir
 /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/test.dir
-/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/canvas.dir
+/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/testcorners.dir
+/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/plot.dir
 /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles/lib.dir

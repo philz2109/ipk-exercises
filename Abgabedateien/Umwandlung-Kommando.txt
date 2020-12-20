@@ -1,0 +1,10 @@
+tar czvf uebungXX.tar.gz /home/blackfire/Documents/ipk-exercises/Abgabeordner/
+tar czvf "Name der Abgabedatei." "Angabe des Pfades, wo die Aufgaben liegen." (Einfach alles vorher richtig in den Abgabeordner legen)
+Besser: tar czvf uebungXX.tar.gz Abgabeordner/
+(Im Ordner sein)
+
+Oder: Maxlösung:
+tar -C "$(dirname "$QUELLE")" -zvchf "$ZIEL/$ARCHIVNAMEN".tar.gz "$(basename "$QUELLE")"
+
+Entpacken:
+tar -xvzf "NAME DER DATEI"

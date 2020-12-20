@@ -1,0 +1,11 @@
+Philipp Brodnike
+Fabian Walliser
+Bearbeitete Aufgaben:
+Alle
+Vorstellung: 
+Aufgabe 1: beide
+Aufgabe 2: beide
+Aufgabe 3 (bonus): beide
+Wir haben es aus Spaß beide mit etwas unterschiedlichen Wegen versucht, weshalb wir bevorzugt unseren Weg vorstellen würden:
+Fabian: fibonacci.cc (habe es versucht, mit nur zwei Variablen (+Eingabevariable) zu lösen. Würde es auch gerne vorstellen :))
+Philipp: FusiliFolge.cc

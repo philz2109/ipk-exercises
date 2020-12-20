@@ -1,0 +1,2 @@
+Die Null kann nur erreicht werden, wenn man auch die Null als Eingabe wählt, denn nur gerade Zahlen werden durch die Rechnung durch 2 geteilt. Somit kann selbst der Fall, dass bei 1 geteilt durch 2 gerundet würde, nicht auftreten und ansonsten würde eine Division (mit Zähler != 0) nie Null ergeben.
+Eine eins kommt genau dann heraus, wenn die eingegebene Zahl größer als Null ist.

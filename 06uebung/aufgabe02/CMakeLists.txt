@@ -4,10 +4,10 @@ project(aufgabe01 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDART 14)
 
-add_library(lib point.cc pgm.cc)
+add_library(lib point.cc pgm.cc canvas.cpp)
 
-add_executable(canvas canvas.cpp)
-target_link_libraries(canvas PUBLIC lib)
+add_executable(plot plot.cc)
+target_link_libraries(plot PUBLIC lib)
 
 enable_testing()
 

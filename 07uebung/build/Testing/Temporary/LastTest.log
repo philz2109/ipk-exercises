@@ -1,0 +1,18 @@
+Start testing: Dec 20 20:17 CET
+----------------------------------------------------------
+1/1 Testing: test_dimensionen
+1/1 Test: test_dimensionen
+Command: "/home/blackfire/Documents/ipk-exercises/07uebung/build/test_dimensionen"
+Directory: /home/blackfire/Documents/ipk-exercises/07uebung/build
+"test_dimensionen" start time: Dec 20 20:17 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_dimensionen" end time: Dec 20 20:17 CET
+"test_dimensionen" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 20 20:17 CET

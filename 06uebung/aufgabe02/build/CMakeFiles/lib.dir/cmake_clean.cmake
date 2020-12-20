@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lib.dir/canvas.cpp.o"
   "CMakeFiles/lib.dir/pgm.cc.o"
   "CMakeFiles/lib.dir/point.cc.o"
   "liblib.a"

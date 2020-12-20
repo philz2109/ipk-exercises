@@ -42,6 +42,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/testcorners.dir/DependInfo.cmake"
-  "CMakeFiles/canvas.dir/DependInfo.cmake"
+  "CMakeFiles/plot.dir/DependInfo.cmake"
   "CMakeFiles/lib.dir/DependInfo.cmake"
   )

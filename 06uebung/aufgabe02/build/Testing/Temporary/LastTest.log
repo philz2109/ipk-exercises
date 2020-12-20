@@ -1,0 +1,18 @@
+Start testing: Dec 16 17:32 CET
+----------------------------------------------------------
+1/1 Testing: testcorners
+1/1 Test: testcorners
+Command: "/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/testcorners"
+Directory: /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build
+"testcorners" start time: Dec 16 17:32 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"testcorners" end time: Dec 16 17:32 CET
+"testcorners" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 16 17:32 CET

@@ -6,23 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/pgm.cc
+/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/canvas.cpp
+canvas.hh
+/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/canvas.hh
+
+/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/canvas.hh
+point.hh
+/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/point.hh
 pgm.hh
 /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/pgm.hh
-cmath
--
-fstream
--
 
 /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/pgm.hh
 string
 -
 vector
 -
-
-/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/point.cc
-point.hh
-/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/point.hh
 
 /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/point.hh
 

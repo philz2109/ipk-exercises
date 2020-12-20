@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/bu
 
 # The main recursive "all" target.
 all: CMakeFiles/testcorners.dir/all
-all: CMakeFiles/canvas.dir/all
+all: CMakeFiles/plot.dir/all
 all: CMakeFiles/lib.dir/all
 
 .PHONY : all
@@ -66,7 +66,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/testcorners.dir/clean
-clean: CMakeFiles/canvas.dir/clean
+clean: CMakeFiles/plot.dir/clean
 clean: CMakeFiles/lib.dir/clean
 
 .PHONY : clean
@@ -78,12 +78,12 @@ clean: CMakeFiles/lib.dir/clean
 CMakeFiles/testcorners.dir/all: CMakeFiles/lib.dir/all
 	$(MAKE) -f CMakeFiles/testcorners.dir/build.make CMakeFiles/testcorners.dir/depend
 	$(MAKE) -f CMakeFiles/testcorners.dir/build.make CMakeFiles/testcorners.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles --progress-num=6,7 "Built target testcorners"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles --progress-num=7,8 "Built target testcorners"
 .PHONY : CMakeFiles/testcorners.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testcorners.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testcorners.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 0
 .PHONY : CMakeFiles/testcorners.dir/rule
@@ -99,31 +99,31 @@ CMakeFiles/testcorners.dir/clean:
 .PHONY : CMakeFiles/testcorners.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/canvas.dir
+# Target rules for target CMakeFiles/plot.dir
 
 # All Build rule for target.
-CMakeFiles/canvas.dir/all: CMakeFiles/lib.dir/all
-	$(MAKE) -f CMakeFiles/canvas.dir/build.make CMakeFiles/canvas.dir/depend
-	$(MAKE) -f CMakeFiles/canvas.dir/build.make CMakeFiles/canvas.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles --progress-num=1,2 "Built target canvas"
-.PHONY : CMakeFiles/canvas.dir/all
+CMakeFiles/plot.dir/all: CMakeFiles/lib.dir/all
+	$(MAKE) -f CMakeFiles/plot.dir/build.make CMakeFiles/plot.dir/depend
+	$(MAKE) -f CMakeFiles/plot.dir/build.make CMakeFiles/plot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles --progress-num=5,6 "Built target plot"
+.PHONY : CMakeFiles/plot.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/canvas.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/canvas.dir/all
+CMakeFiles/plot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 0
-.PHONY : CMakeFiles/canvas.dir/rule
+.PHONY : CMakeFiles/plot.dir/rule
 
 # Convenience name for target.
-canvas: CMakeFiles/canvas.dir/rule
+plot: CMakeFiles/plot.dir/rule
 
-.PHONY : canvas
+.PHONY : plot
 
 # clean rule for target.
-CMakeFiles/canvas.dir/clean:
-	$(MAKE) -f CMakeFiles/canvas.dir/build.make CMakeFiles/canvas.dir/clean
-.PHONY : CMakeFiles/canvas.dir/clean
+CMakeFiles/plot.dir/clean:
+	$(MAKE) -f CMakeFiles/plot.dir/build.make CMakeFiles/plot.dir/clean
+.PHONY : CMakeFiles/plot.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/lib.dir
@@ -132,12 +132,12 @@ CMakeFiles/canvas.dir/clean:
 CMakeFiles/lib.dir/all:
 	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/depend
 	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles --progress-num=3,4,5 "Built target lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles --progress-num=1,2,3,4 "Built target lib"
 .PHONY : CMakeFiles/lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/06uebung/aufgabe02/build/CMakeFiles 0
 .PHONY : CMakeFiles/lib.dir/rule

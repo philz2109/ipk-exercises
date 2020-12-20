@@ -1,7 +1,6 @@
 #include "canvas.hh"
  
-Canvas::Canvas(const Point& center, double width, double height, int horPixels, int vertPixels): center(center), width(width), height(height), vertPixels(vertPixels), horPixels(horPixels){
-	 
+Canvas::Canvas(const Point& center, double width, double height, int horPixels, int vertPixels): center(center), width(width), height(height), vertPixels(vertPixels), horPixels(horPixels), mrGrey(horPixels, std::vector<int>(vertPixels, 0)){	 
 }
  
 int Canvas::brightness(int i, int j) const{
@@ -18,8 +17,27 @@ Point Canvas::coord(int i, int j) const{
 	return Point(x, y);
 }
 
-int main(int argc, char *argv[]) { //Main-Funktion
-	Canvas c(Point(500, 400), 1000, 800, 10, 8);
-	return(0);
+double Canvas::getMrGreyVertSize() const{
+	return mrGrey[0].size();
+}
+	
+double Canvas::getMrGreyHoriSize() const{
+	return mrGrey.size();
+}
+
+int Canvas::getWidth() const{
+	return width;
+}
+
+int Canvas::getHeight() const{
+	return height;
+}
+
+Point Canvas::getCenter() const{
+	return center;
+}
+
+void Canvas::write(const std::string& filename){
+	write_pgm(mrGrey, filename);
 }
  

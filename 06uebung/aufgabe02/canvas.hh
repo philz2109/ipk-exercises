@@ -13,13 +13,16 @@ class Canvas{
 	public:
 		Canvas(const Point& center, double width, double height, int horPixels, int vertPixels);
 		
-		//double getHorPixels() const;
-		//double getVertPixels() const;
-		//int getWidth() const;
-		//int getHeight() const;
+		double getMrGreyVertSize() const;
+		double getMrGreyHoriSize() const;
+		int getWidth() const;
+		int getHeight() const;
+		Point getCenter() const;
 		int brightness(int i, int j) const;
 		void setBrightness(int i, int j, int brightness);
 		Point coord(int i, int j) const;
+		
+		void write(const std::string& filename); //PGM-Methode
 };
 
 #endif
