@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDART 14)
 
 add_library(lib io.cc statistics.cc)
 
-add_executable(readvector readvector.cc)
+add_executable(readvector readvector.cc) //Immer .cc Dateien angeben, also da wo der richtige Code steht
 target_link_libraries(readvector PUBLIC lib)
 add_executable(uniform uniform.cc)
 target_link_libraries(uniform PUBLIC lib)
