@@ -2,6 +2,7 @@
 #define IT_RESULT
 
 #include "canvas.hh"
+#include <cmath>
 
 class IterationResult{
 	private:
