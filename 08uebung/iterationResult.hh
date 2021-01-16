@@ -6,13 +6,13 @@
 
 class IterationResult{
 	private:
-		Point point;
-		int a_Iter;
+		const Point point;
+		const int a_Iter;
 	
 	public:
 		IterationResult(Point point, int a);
-		Point& getPoint();
-		int& getA_Iter();
+		Point getPoint();
+		int getA_Iter();
 };
 
 #endif
