@@ -2,36 +2,58 @@
 
 #include "iterationResult.hh"
 
-IterationResult iterate(Point z,Point c, double threshold, int maxIt){
-	int k;
-	for(k = 0; k < maxIt && sqrt(z.x()*z.x()+z.y()*z.y())<=threshold; k++){
-		z = Point(z.x()*z.x()-z.y()*z.y()+c.x(), 2*z.x()*z.y()+c.y());
+/*IterationResult iterate(Point z,Point c, double threshold, int maxIt){
+	int k = 0;
+	while(k < maxIt && sqrt(z.x()*z.x()+z.y()*z.y())<=threshold){
+		z.setX(pow(z.x(),2)-pow(z.y(),2)+c.x());
+		z.setY(2*z.x()*z.y()+c.y());
+		++k;
 	}
+	//for(k = 0; k < maxIt && sqrt(z.x()*z.x()+z.y()*z.y())<=threshold; k++){
+		//z = Point(z.x()*z.x()-z.y()*z.y()+c.x(), 2*z.x()*z.y()+c.y());
+	//}
 	IterationResult i(z, k);
 	return(i);
+}*/
+
+IterationResult iterate(Point z, Point c, double threshold, int maxIt)
+{
+    int i=0;
+    while (sqrt(pow(z.x(),2)+pow(z.y(),2))<threshold && i<=maxIt)
+    {
+        double n=pow(z.x(),2)-pow(z.y(),2)+c.x();
+        double m=2*z.x()*z.y()+c.y();
+        z.setX(n);
+        z.setY(m);
+        ++i;
+    }
+    IterationResult iRes(Point(0, 0), 1);
+    iRes.setPoint(z);
+    iRes.setIt(i);
+    return iRes;
 }
 
 void mandelbrot(Canvas& canvas, double threshold,int maxIt, std::string filename){
-	//IterationResult itResult();
-	for(int i = 0; i<canvas.width(); i++){
-		for(int j = 0; j<canvas.height(); j++){
-			auto itResult = iterate(Point(0, 0), canvas.coord(i, j), threshold, maxIt).getA_Iter();
+	for(int i = 0; i<canvas.horPixels(); i++){
+		for(int j = 0; j<canvas.vertPixels(); j++){
+			Point p = canvas.coord(i,j);
+			Point p2(0,0);
+			IterationResult itResult = iterate(p2, p, threshold, maxIt);
 			if(itResult.getA_Iter()>=maxIt){
 				canvas(i, j) = 0;
 			}else{
-				canvas(i, j) = std::log(itResult.getPoint())*100;
+				//std::cout << itResult.getA_Iter() << std::endl;
+				canvas(i, j) = std::log(itResult.getA_Iter())*100;
 			}
 		}
 	}
+	canvas.write(filename);
+	std::cout << "File wurde generiert!" << std::endl;
 }
 
 int main(int argc, char *argv[]){
-	Point p(4,2);
-	Point z(1,1);
-	Point u(0,0);
-	IterationResult i = iterate(z, u,10, 10);
-	std::cout << i.getPoint().x() << "  " << i.getPoint().y() << std::endl;
-
+	
 	Canvas can(Point(-1, 0), 8000, 6400, 400, 300);
-	mandelbrot(can, 1000, 1000, "Mandelbrot");
+	mandelbrot(can, 1000, 1000, "BIssirbkseifbsiebs");
+	
 }

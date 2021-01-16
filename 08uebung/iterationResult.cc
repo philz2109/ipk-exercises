@@ -9,3 +9,11 @@ Point IterationResult::getPoint(){
 int IterationResult::getA_Iter(){
 	return(a_Iter);
 }
+
+void IterationResult::setPoint(Point i){
+	point = i;
+}
+
+void IterationResult::setIt(int i){
+	a_Iter = i;
+}
