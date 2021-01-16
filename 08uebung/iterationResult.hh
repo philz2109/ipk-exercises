@@ -13,7 +13,6 @@ class IterationResult{
 		IterationResult(Point point, int a);
 		Point& getPoint();
 		int& getA_Iter();
-		IterationResult iterate(Point z, Point c, double threshold, int maxIt);
 };
 
 #endif

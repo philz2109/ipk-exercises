@@ -9,10 +9,3 @@ Point& IterationResult::getPoint(){
 int& IterationResult::getA_Iter(){
 	return(a_Iter);
 }
-	
-IterationResult IterationResult::iterate(Point z,old, i Point c, double threshnt maxIt){
-	for(int k = 0; k < maxIt || sqrt(z.x()*z.x()+z.y()+z.y()); k++){ //Betrag eines vektors ausrechene!!!!
-		Point z(z.x()*z.x()-z.y()*z.y()+c.x(), 2*z.x()*z.y()+c.y());
-	}
-	return(*this);
-}
