@@ -42,6 +42,8 @@ class Canvas {
   // Accessors for member variables
 
   Point center() const { return _center; }
+  
+  std::vector<std::vector<int>> vektor(){ return _pixels;}
 
   double width() const { return _width; }
 
