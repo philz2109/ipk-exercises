@@ -52,8 +52,8 @@ void mandelbrot(Canvas& canvas, double threshold,int maxIt, std::string filename
 }
 
 void julia (Point c, Canvas& canvas, double threshold, int maxIt, std::string filename){
-	for(int i = 1; i<(int)canvas.vektor().size(); i++){
-		for(int j = 1; j<(int)canvas.vektor()[0].size(); j++){
+	for(int i = 0; i<(int)canvas.vektor().size(); i++){
+		for(int j = 0; j<(int)canvas.vektor()[0].size(); j++){
 			Point p = canvas.coord(i,j);
 			IterationResult itResult = iterate(p, c, threshold, maxIt);
 			if(itResult.getA_Iter()>=maxIt){

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blackfire/Documents/ipk-exercises/08uebungK/canvas.hh
+point.hh
+/home/blackfire/Documents/ipk-exercises/08uebungK/point.hh
+pgm.hh
+/home/blackfire/Documents/ipk-exercises/08uebungK/pgm.hh
+
+/home/blackfire/Documents/ipk-exercises/08uebungK/iterationResult.hh
+canvas.hh
+/home/blackfire/Documents/ipk-exercises/08uebungK/canvas.hh
+cmath
+-
+
+/home/blackfire/Documents/ipk-exercises/08uebungK/pgm.hh
+string
+-
+vector
+-
+
+/home/blackfire/Documents/ipk-exercises/08uebungK/point.hh
+
+/home/blackfire/Documents/ipk-exercises/08uebungK/test.cc
+iostream
+-
+iterationResult.hh
+/home/blackfire/Documents/ipk-exercises/08uebungK/iterationResult.hh
+
