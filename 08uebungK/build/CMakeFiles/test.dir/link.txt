@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/test.dir/test.cc.o CMakeFiles/test.dir/canvas.cpp.o CMakeFiles/test.dir/iterationResult.cc.o CMakeFiles/test.dir/pgm.cc.o  -o test 

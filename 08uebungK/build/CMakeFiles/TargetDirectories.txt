@@ -1,3 +1,0 @@
-/home/blackfire/Documents/ipk-exercises/08uebungK/build/CMakeFiles/rebuild_cache.dir
-/home/blackfire/Documents/ipk-exercises/08uebungK/build/CMakeFiles/edit_cache.dir
-/home/blackfire/Documents/ipk-exercises/08uebungK/build/CMakeFiles/test.dir
