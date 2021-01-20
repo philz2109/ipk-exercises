@@ -1,4 +1,4 @@
-# Install script for directory: /home/blackfire/Documents/ipk-exercises/08uebungK
+# Install script for directory: /home/philz/Documents/ipk-exercises/08uebungk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/blackfire/Documents/ipk-exercises/08uebungK/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/philz/Documents/ipk-exercises/08uebungk/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -28,7 +28,8 @@ IterationResult iterate(Point z, Point c, double threshold, int maxIt)
     iRes.setPoint(z);
     iRes.setIt(i);
     return iRes;
-}*/
+}  
+*/
 
 void mandelbrot(Canvas& canvas, double threshold,int maxIt, std::string filename, int pixel){
 	int hell;
@@ -61,40 +62,29 @@ void mandelbrot(Canvas& canvas, double threshold,int maxIt, std::string filename
 }
 
 void julia (Point c, Canvas& canvas, double threshold, int maxIt, std::string filename, int pixel){
-	int hell;
-	for(int x = 0; x<canvas.getMrGreyHoriSize(); x++){
-		for(int y = 0; y<canvas.getMrGreyVertSize(); y++){
-			Point p = canvas.coord(x,y);
-			IterationResult itResult = iterate(p, c, threshold, maxIt);
-			if(itResult.getA_Iter()>=maxIt){
-				canvas.setBrightness(x, y, 0);
-			}else{
-				if(itResult.getA_Iter()<0){
-					itResult.setIt(0);
-				}
-			    hell = std::log(itResult.getA_Iter())*100;
-				if(hell < 0){
-					hell = 0;
-				}
-				canvas.setBrightness(x, y, hell);;
-				if(hell < 0){
-					hell = -hell;
-				}
-				canvas.setBrightness(x, y, hell);
-			}
-		}
-	}
-	canvas.write(filename);
-	std::cout << "File wurde generiert!" << std::endl;
+    int hell;
+    for(int x = 0; x<canvas.getMrGreyHoriSize(); x++){
+        for(int y = 0; y<canvas.getMrGreyVertSize(); y++){
+            Point p = Point((x-canvas.getMrGreyHoriSize()/2)/pixel+canvas.getCenter().x(), (y-canvas.getMrGreyVertSize()/2)/pixel+canvas.getCenter().y());
+            IterationResult itResult = iterate(p, c, threshold, maxIt);
+            if(itResult.getA_Iter()>=maxIt){
+                canvas.setBrightness(x, y, 0);
+            }else{
+                canvas.setBrightness(x, y, std::log(itResult.getA_Iter())*100);
+            }
+        }
+    }
+    canvas.write(filename);
+    std::cout << "File wurde generiert!" << std::endl;
 }
 
 int main(int argc, char *argv[]){
-	double threshold = 1000;
-	int maxIt = 1000;
-	int pixel = 1000;
-	Canvas can(Point(-1, 0), 4, 2, 4*pixel, 2*pixel);
-	mandelbrot(can, threshold, maxIt, "BIssirbkseifbsiebs", pixel);
-	//Point c(-0.8, 0.156);
-	//Canvas can2(c, 8000, 6400, 4*pixel, 2*pixel);
-	//julia(c, can2, threshold, maxIt, "Julia", pixel);
+    double threshold = 1000;
+    int maxIt = 1000;
+    int pixel = 1000;
+    //Canvas can(Point(-1, 0), 4, 3, 4*pixel, 3*pixel);
+    // mandelbrot(can, threshold, maxIt, "BIssirbkseifbsiebs", pixel);
+    Point c(-0.8, 0.156);
+    Canvas can2(c, 40, 40, 4*pixel, 4*pixel);
+    julia(c, can2, threshold, maxIt, "Julia", pixel);
 }
