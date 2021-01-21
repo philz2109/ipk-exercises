@@ -67,13 +67,14 @@ void julia (Point c, Canvas& canvas2, double threshold, int maxIT, std::string f
 
 
 int main () {
-	double threshold = 1000;
-	int maxIT = 1000;
+	double threshold = 2;
+	int maxIT = 355;
 	Point c(-0.8,0.156);
-	////mandelbrot(canvas, threshold, maxIT, "test.pgm");
-	//std::cout << iterate(Point(0,0), Point(-1,0), 100,100).geta_iter();
-	Canvas canvas2(Point(0,0),4,3,4000,3000);
-	julia(c,canvas2,threshold, maxIT, "Julia.pgm");
+	Canvas canvas(Point(0,0),4,3,4000,3000);
+	mandelbrot(canvas, threshold, maxIT, "test.pgm");
+	std::cout << iterate(Point(0,0), Point(-1,0), 100,100).geta_iter();
+	//Canvas canvas2(Point(0,0),4,3,4000,3000);
+	//julia(c,canvas2,threshold, maxIT, "Julia.pgm");
 
 }
 

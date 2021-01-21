@@ -1,0 +1,30 @@
+Aufgabe 1:
+
+Was passiert mit Werten über oder unter 1000 für threshold und maxIt:
+
+Bei werten über 1000 ändert sich nichts. Das bild bleibt gleich und die Werte die errechnet werden ändern sich nicht mehr.
+
+
+Bei Werten unter 1000:
+Wert :500
+Das Ergebnis verändert sich nicht. Es bleibt gleich.
+
+Wert : 355
+Das Ergebnis ändert sich nicht.
+
+Wert : 100
+Das Bild fängt an ungenauer zuwerden, also die Werte um die Grenzen der Mandelbrot menge sind nicht mehr so genau. ( Sieht so aus)
+
+Wert : 50
+Die "Blitze" die Um die Mandelbrotmenge waren werden nun Schwarz bzw werden zur menge dazugezählz laut den berechnungen.
+
+Wert: 10
+Die Mandelbrotmenge bzw die Grenze dieser wird immer ungenauer und man kann sie nur noch erahnen.
+
+Experiment beendet.
+
+Perfekte Werte für möglichst wenige Berechnung und trotzdem Perfekts Ergebnis:
+
+2 für threshold;
+355 für MaxIt;
+ 
