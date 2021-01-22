@@ -4,6 +4,9 @@ project(aufgabe02 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDART 14)
 
+set(CMAKE_BUILD_TYPE Debug)//Für Debugging
+set(CMAKE_BUILD_TYPE Release)//oder für schnellere Ausführung des Programms
+
 add_library(lib io.cc statistics.cc)
 
 add_executable(readvector readvector.cc) //Immer .cc Dateien angeben, also da wo der richtige Code steht

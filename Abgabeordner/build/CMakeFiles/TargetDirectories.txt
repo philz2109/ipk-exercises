@@ -1,3 +1,0 @@
-/home/philz/Documents/ipk-exercises/08uebungKv3/build/CMakeFiles/rebuild_cache.dir
-/home/philz/Documents/ipk-exercises/08uebungKv3/build/CMakeFiles/edit_cache.dir
-/home/philz/Documents/ipk-exercises/08uebungKv3/build/CMakeFiles/test.dir
