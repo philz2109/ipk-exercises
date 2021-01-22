@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blackfire/Documents/ipk-exercises/09uebung/debug-3.cc
+algorithm
+-
+cmath
+-
+iostream
+-
+memory
+-
+random
+-
+string
+-
+vector
+-
+

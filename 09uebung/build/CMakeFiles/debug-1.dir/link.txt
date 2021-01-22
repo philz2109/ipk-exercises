@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/debug-1.dir/debug-1.cc.o  -o debug-1 

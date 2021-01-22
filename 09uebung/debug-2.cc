@@ -39,7 +39,7 @@ class Circle : public Shape {
  public:
   virtual std::string name() const { return "circle"; }
 
-  virtual int dimension() { return 2; }
+  virtual int dimension() const { return 2; }
 
   virtual double volume() const { return M_PI * _radius * _radius; }
 
@@ -102,7 +102,7 @@ int main(int argc, char** argv) {
   // find volume of largest 2D shape
   double volume = 0.0;
   for (auto& shape : shapes) {
-    if (shape->dimension() != 2) continue;
+    if (shape->dimension() != 2) continue;//check ob echtes Objekt
 
     volume = std::max(volume, shape->volume());
   }

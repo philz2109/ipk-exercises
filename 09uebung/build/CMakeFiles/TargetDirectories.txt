@@ -1,0 +1,5 @@
+/home/blackfire/Documents/ipk-exercises/09uebung/build/CMakeFiles/rebuild_cache.dir
+/home/blackfire/Documents/ipk-exercises/09uebung/build/CMakeFiles/edit_cache.dir
+/home/blackfire/Documents/ipk-exercises/09uebung/build/CMakeFiles/debug-3.dir
+/home/blackfire/Documents/ipk-exercises/09uebung/build/CMakeFiles/debug-2.dir
+/home/blackfire/Documents/ipk-exercises/09uebung/build/CMakeFiles/debug-1.dir
