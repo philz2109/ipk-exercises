@@ -39,7 +39,7 @@ class Circle : public Shape {
  public:
   virtual std::string name() const { return "circle"; }
 
-  virtual int dimension() const { return 2; }
+  virtual int dimension() const { return 2; } //Fehler: Die Funktion war nicht konstant
 
   virtual double volume() const { return M_PI * _radius * _radius; }
 
@@ -103,9 +103,10 @@ int main(int argc, char** argv) {
   double volume = 0.0;
   for (auto& shape : shapes) {
     if (shape->dimension() != 2) continue;//check ob echtes Objekt
-
     volume = std::max(volume, shape->volume());
   }
 
   std::cout << volume << std::endl;
 }
+
+//Nach der Korrektur des einen Fehlers konnten wir leider keine falsche Berechnung mehr feststellen.
