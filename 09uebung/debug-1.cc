@@ -4,7 +4,7 @@
 
 std::vector<int> reversed(const std::vector<int>& v) {
   std::vector<int> result;
-  for (std::size_t i = v.size(); i > 0; --i) //Fehler 2
+  for (std::size_t i = v.size(); i > 0; --i) //Fehler 2 size_t kann keine negativen Werte abbilden
   	result.push_back(v[i]);
   return result;
 }
@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
   std::vector<int> numbers;
   for (std::size_t i = 0; i < argc; ++i) {
     // atoi converts a string to a number
-    int number = std::atoi(argv[i]); //Fehler 1
+    int number = std::atoi(argv[i]); //Fehler 1 Es wurde die Funktion stoi, statt atio ausgeführt
     numbers.push_back(number);
   }
 

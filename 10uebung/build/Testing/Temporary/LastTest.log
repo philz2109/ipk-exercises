@@ -1,0 +1,33 @@
+Start testing: Jan 29 18:03 CET
+----------------------------------------------------------
+1/2 Testing: letterTest
+1/2 Test: letterTest
+Command: "/home/blackfire/Documents/ipk-exercises/10uebung/build/letterTest"
+Directory: /home/blackfire/Documents/ipk-exercises/10uebung/build
+"letterTest" start time: Jan 29 18:03 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"letterTest" end time: Jan 29 18:03 CET
+"letterTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: testStatistik
+2/2 Test: testStatistik
+Command: "/home/blackfire/Documents/ipk-exercises/10uebung/build/testStatistik"
+Directory: /home/blackfire/Documents/ipk-exercises/10uebung/build
+"testStatistik" start time: Jan 29 18:03 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"testStatistik" end time: Jan 29 18:03 CET
+"testStatistik" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 29 18:03 CET
