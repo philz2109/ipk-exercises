@@ -4,7 +4,7 @@ project(3-4 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(letterfrequencies letterfrequencies.cc)
+add_executable(probe testStatistik.cc)
 
 enable_testing()
 

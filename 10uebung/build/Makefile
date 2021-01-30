@@ -148,17 +148,17 @@ letterTest/fast:
 .PHONY : letterTest/fast
 
 #=============================================================================
-# Target rules for targets named letterfrequencies
+# Target rules for targets named probe
 
 # Build rule for target.
-letterfrequencies: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 letterfrequencies
-.PHONY : letterfrequencies
+probe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 probe
+.PHONY : probe
 
 # fast build rule for target.
-letterfrequencies/fast:
-	$(MAKE) -f CMakeFiles/letterfrequencies.dir/build.make CMakeFiles/letterfrequencies.dir/build
-.PHONY : letterfrequencies/fast
+probe/fast:
+	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/build
+.PHONY : probe/fast
 
 letterTest.o: letterTest.cc.o
 
@@ -187,33 +187,6 @@ letterTest.cc.s:
 	$(MAKE) -f CMakeFiles/letterTest.dir/build.make CMakeFiles/letterTest.dir/letterTest.cc.s
 .PHONY : letterTest.cc.s
 
-letterfrequencies.o: letterfrequencies.cc.o
-
-.PHONY : letterfrequencies.o
-
-# target to build an object file
-letterfrequencies.cc.o:
-	$(MAKE) -f CMakeFiles/letterfrequencies.dir/build.make CMakeFiles/letterfrequencies.dir/letterfrequencies.cc.o
-.PHONY : letterfrequencies.cc.o
-
-letterfrequencies.i: letterfrequencies.cc.i
-
-.PHONY : letterfrequencies.i
-
-# target to preprocess a source file
-letterfrequencies.cc.i:
-	$(MAKE) -f CMakeFiles/letterfrequencies.dir/build.make CMakeFiles/letterfrequencies.dir/letterfrequencies.cc.i
-.PHONY : letterfrequencies.cc.i
-
-letterfrequencies.s: letterfrequencies.cc.s
-
-.PHONY : letterfrequencies.s
-
-# target to generate assembly for a file
-letterfrequencies.cc.s:
-	$(MAKE) -f CMakeFiles/letterfrequencies.dir/build.make CMakeFiles/letterfrequencies.dir/letterfrequencies.cc.s
-.PHONY : letterfrequencies.cc.s
-
 testStatistik.o: testStatistik.cc.o
 
 .PHONY : testStatistik.o
@@ -221,6 +194,7 @@ testStatistik.o: testStatistik.cc.o
 # target to build an object file
 testStatistik.cc.o:
 	$(MAKE) -f CMakeFiles/testStatistik.dir/build.make CMakeFiles/testStatistik.dir/testStatistik.cc.o
+	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/testStatistik.cc.o
 .PHONY : testStatistik.cc.o
 
 testStatistik.i: testStatistik.cc.i
@@ -230,6 +204,7 @@ testStatistik.i: testStatistik.cc.i
 # target to preprocess a source file
 testStatistik.cc.i:
 	$(MAKE) -f CMakeFiles/testStatistik.dir/build.make CMakeFiles/testStatistik.dir/testStatistik.cc.i
+	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/testStatistik.cc.i
 .PHONY : testStatistik.cc.i
 
 testStatistik.s: testStatistik.cc.s
@@ -239,6 +214,7 @@ testStatistik.s: testStatistik.cc.s
 # target to generate assembly for a file
 testStatistik.cc.s:
 	$(MAKE) -f CMakeFiles/testStatistik.dir/build.make CMakeFiles/testStatistik.dir/testStatistik.cc.s
+	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/testStatistik.cc.s
 .PHONY : testStatistik.cc.s
 
 # Help Target
@@ -252,13 +228,10 @@ help:
 	@echo "... testStatistik"
 	@echo "... rebuild_cache"
 	@echo "... letterTest"
-	@echo "... letterfrequencies"
+	@echo "... probe"
 	@echo "... letterTest.o"
 	@echo "... letterTest.i"
 	@echo "... letterTest.s"
-	@echo "... letterfrequencies.o"
-	@echo "... letterfrequencies.i"
-	@echo "... letterfrequencies.s"
 	@echo "... testStatistik.o"
 	@echo "... testStatistik.i"
 	@echo "... testStatistik.s"

@@ -55,7 +55,7 @@ CMAKE_BINARY_DIR = /home/blackfire/Documents/ipk-exercises/10uebung/build
 # The main recursive "all" target.
 all: CMakeFiles/testStatistik.dir/all
 all: CMakeFiles/letterTest.dir/all
-all: CMakeFiles/letterfrequencies.dir/all
+all: CMakeFiles/probe.dir/all
 
 .PHONY : all
 
@@ -67,7 +67,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/testStatistik.dir/clean
 clean: CMakeFiles/letterTest.dir/clean
-clean: CMakeFiles/letterfrequencies.dir/clean
+clean: CMakeFiles/probe.dir/clean
 
 .PHONY : clean
 
@@ -126,31 +126,31 @@ CMakeFiles/letterTest.dir/clean:
 .PHONY : CMakeFiles/letterTest.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/letterfrequencies.dir
+# Target rules for target CMakeFiles/probe.dir
 
 # All Build rule for target.
-CMakeFiles/letterfrequencies.dir/all:
-	$(MAKE) -f CMakeFiles/letterfrequencies.dir/build.make CMakeFiles/letterfrequencies.dir/depend
-	$(MAKE) -f CMakeFiles/letterfrequencies.dir/build.make CMakeFiles/letterfrequencies.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/10uebung/build/CMakeFiles --progress-num=3,4 "Built target letterfrequencies"
-.PHONY : CMakeFiles/letterfrequencies.dir/all
+CMakeFiles/probe.dir/all:
+	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/depend
+	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/10uebung/build/CMakeFiles --progress-num=3,4 "Built target probe"
+.PHONY : CMakeFiles/probe.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/letterfrequencies.dir/rule: cmake_check_build_system
+CMakeFiles/probe.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/10uebung/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/letterfrequencies.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/probe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/10uebung/build/CMakeFiles 0
-.PHONY : CMakeFiles/letterfrequencies.dir/rule
+.PHONY : CMakeFiles/probe.dir/rule
 
 # Convenience name for target.
-letterfrequencies: CMakeFiles/letterfrequencies.dir/rule
+probe: CMakeFiles/probe.dir/rule
 
-.PHONY : letterfrequencies
+.PHONY : probe
 
 # clean rule for target.
-CMakeFiles/letterfrequencies.dir/clean:
-	$(MAKE) -f CMakeFiles/letterfrequencies.dir/build.make CMakeFiles/letterfrequencies.dir/clean
-.PHONY : CMakeFiles/letterfrequencies.dir/clean
+CMakeFiles/probe.dir/clean:
+	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/clean
+.PHONY : CMakeFiles/probe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

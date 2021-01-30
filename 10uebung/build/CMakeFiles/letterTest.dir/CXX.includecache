@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/home/blackfire/Documents/ipk-exercises/10uebung/frequencysource.hh
+algorithm
+-
+cctype
+-
+iostream
+-
+iterator
+-
+utility
+-
+
 /home/blackfire/Documents/ipk-exercises/10uebung/letterTest.cc
 letterfrequencies.hh
 /home/blackfire/Documents/ipk-exercises/10uebung/letterfrequencies.hh
+frequencysource.hh
+/home/blackfire/Documents/ipk-exercises/10uebung/frequencysource.hh
 
 /home/blackfire/Documents/ipk-exercises/10uebung/letterfrequencies.hh
 cctype

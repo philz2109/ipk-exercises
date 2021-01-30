@@ -3,7 +3,34 @@
 #include <map>
 #include "letterfrequencies.hh"
 
-void print_frequencies(const std::map<char, int>& frequencies);
+/*void LetterFrequencies::readData(Source& source){
+	while (true) {
+    	//read in character
+    	auto data = source.next();
+    	// break condition
+    	if(not data.second){
+    		break;
+    	}
+
+    	if (std::isalpha(data)) {
+      		map[std::toupper(data)] += 1;
+    	}
+  	}
+}
+
+void LetterFrequencies::printStatistics(){
+	std::size_t total = 0;
+
+  	for (auto entry : map) {
+		total += entry.second;
+	}
+
+  	for (auto entry : map){
+    	std::cout << entry.first << ": "  << static_cast<double>(entry.second) / total << std::endl;
+    }
+}*/
+
+/*void print_frequencies(const std::map<char, int>& frequencies);
 
 std::map<char, int> get_frequencies() {
   std::map<char, int> f;
@@ -37,3 +64,4 @@ int main() {
   print_frequencies(get_frequencies());
   return 0;
 }
+*/
