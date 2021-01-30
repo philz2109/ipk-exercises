@@ -8,35 +8,33 @@ class LetterFrequencies{
 		std::map<Map, int> map;
 
 	public:
-		LetterFrequencies(){}
 		// Processes all letters obtained from source
 		template<typename Source>
 		void readData(Source& source){
-	while (true) {
-    	//read in character
-    	auto data = source.next();
-    	// break condition
-    	if(not data.second){
-    		break;
-    	}
+			while (true) {
+		    	//read in character
+		    	auto data = source.next();
+		    	// break condition
+		    	if(not data.second){
+		    		break;
+		    	}
 
-    	if (std::isalpha(data.first)) {
-      		map[std::toupper(data.first)] += 1;
-    	}
-  	}
-}
+		    	if (std::isalpha(data.first)) {
+		      		map[std::toupper(data.first)] += 1;
+		    	}
+		  	}
+		}
 
 		// does the statistics and prints to stdout
 		void printStatistics(){
-	std::size_t total = 0;
+			std::size_t total = 0;
 
-  	for (auto entry : map) {
-		total += entry.second;
-	}
+		  	for (auto entry : map) {
+				total += entry.second;
+			}
 
-  	for (auto entry : map){
-    	std::cout << entry.first << ": "  << static_cast<double>(entry.second) / total << std::endl;
-    }
-}
-
+		  	for (auto entry : map){
+		    	std::cout << entry.first << ": "  << static_cast<double>(entry.second) / total << std::endl;
+		    }
+		}
 };
