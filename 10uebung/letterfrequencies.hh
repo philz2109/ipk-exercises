@@ -1,24 +1,22 @@
 #include <cctype>
 #include <iostream>
 #include <map>
+#include <unordered_map>
 
 template<typename Map>
 class LetterFrequencies{
 	private:
-		std::map<Map, int> map;
+		Map map;
 
 	public:
 		// Processes all letters obtained from source
 		template<typename Source>
 		void readData(Source& source){
 			while (true) {
-		    	//read in character
-		    	auto data = source.next();
-		    	// break condition
-		    	if(not data.second){
-		    		break;
-		    	}
-
+				auto data = source.next();
+				// check if data valid
+				if (not data.second)
+				break;
 		    	if (std::isalpha(data.first)) {
 		      		map[std::toupper(data.first)] += 1;
 		    	}
@@ -36,5 +34,9 @@ class LetterFrequencies{
 		  	for (auto entry : map){
 		    	std::cout << entry.first << ": "  << static_cast<double>(entry.second) / total << std::endl;
 		    }
+		}
+
+		bool map_empty(){
+			return map.empty();
 		}
 };

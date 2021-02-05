@@ -1,0 +1,3 @@
+/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/edit_cache.dir
+/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/rebuild_cache.dir
+/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/nbody.dir

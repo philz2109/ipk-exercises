@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/testStatistik.dir/testStatistik.cc.o  -o testStatistik 
+/usr/bin/c++  -g   CMakeFiles/testStatistik.dir/testStatistik.cc.o  -o testStatistik 

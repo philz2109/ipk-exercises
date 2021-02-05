@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/blackfire/Documents/ipk-exercises/10uebung/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,17 +88,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -148,17 +148,17 @@ letterTest/fast:
 .PHONY : letterTest/fast
 
 #=============================================================================
-# Target rules for targets named probe
+# Target rules for targets named aufgabeb
 
 # Build rule for target.
-probe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 probe
-.PHONY : probe
+aufgabeb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufgabeb
+.PHONY : aufgabeb
 
 # fast build rule for target.
-probe/fast:
-	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/build
-.PHONY : probe/fast
+aufgabeb/fast:
+	$(MAKE) -f CMakeFiles/aufgabeb.dir/build.make CMakeFiles/aufgabeb.dir/build
+.PHONY : aufgabeb/fast
 
 letterTest.o: letterTest.cc.o
 
@@ -187,6 +187,33 @@ letterTest.cc.s:
 	$(MAKE) -f CMakeFiles/letterTest.dir/build.make CMakeFiles/letterTest.dir/letterTest.cc.s
 .PHONY : letterTest.cc.s
 
+sanitizeword.o: sanitizeword.cc.o
+
+.PHONY : sanitizeword.o
+
+# target to build an object file
+sanitizeword.cc.o:
+	$(MAKE) -f CMakeFiles/aufgabeb.dir/build.make CMakeFiles/aufgabeb.dir/sanitizeword.cc.o
+.PHONY : sanitizeword.cc.o
+
+sanitizeword.i: sanitizeword.cc.i
+
+.PHONY : sanitizeword.i
+
+# target to preprocess a source file
+sanitizeword.cc.i:
+	$(MAKE) -f CMakeFiles/aufgabeb.dir/build.make CMakeFiles/aufgabeb.dir/sanitizeword.cc.i
+.PHONY : sanitizeword.cc.i
+
+sanitizeword.s: sanitizeword.cc.s
+
+.PHONY : sanitizeword.s
+
+# target to generate assembly for a file
+sanitizeword.cc.s:
+	$(MAKE) -f CMakeFiles/aufgabeb.dir/build.make CMakeFiles/aufgabeb.dir/sanitizeword.cc.s
+.PHONY : sanitizeword.cc.s
+
 testStatistik.o: testStatistik.cc.o
 
 .PHONY : testStatistik.o
@@ -194,7 +221,6 @@ testStatistik.o: testStatistik.cc.o
 # target to build an object file
 testStatistik.cc.o:
 	$(MAKE) -f CMakeFiles/testStatistik.dir/build.make CMakeFiles/testStatistik.dir/testStatistik.cc.o
-	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/testStatistik.cc.o
 .PHONY : testStatistik.cc.o
 
 testStatistik.i: testStatistik.cc.i
@@ -204,7 +230,6 @@ testStatistik.i: testStatistik.cc.i
 # target to preprocess a source file
 testStatistik.cc.i:
 	$(MAKE) -f CMakeFiles/testStatistik.dir/build.make CMakeFiles/testStatistik.dir/testStatistik.cc.i
-	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/testStatistik.cc.i
 .PHONY : testStatistik.cc.i
 
 testStatistik.s: testStatistik.cc.s
@@ -214,8 +239,34 @@ testStatistik.s: testStatistik.cc.s
 # target to generate assembly for a file
 testStatistik.cc.s:
 	$(MAKE) -f CMakeFiles/testStatistik.dir/build.make CMakeFiles/testStatistik.dir/testStatistik.cc.s
-	$(MAKE) -f CMakeFiles/probe.dir/build.make CMakeFiles/probe.dir/testStatistik.cc.s
 .PHONY : testStatistik.cc.s
+
+testaufgabeb.o: testaufgabeb.cc.o
+
+.PHONY : testaufgabeb.o
+
+# target to build an object file
+testaufgabeb.cc.o:
+	$(MAKE) -f CMakeFiles/aufgabeb.dir/build.make CMakeFiles/aufgabeb.dir/testaufgabeb.cc.o
+.PHONY : testaufgabeb.cc.o
+
+testaufgabeb.i: testaufgabeb.cc.i
+
+.PHONY : testaufgabeb.i
+
+# target to preprocess a source file
+testaufgabeb.cc.i:
+	$(MAKE) -f CMakeFiles/aufgabeb.dir/build.make CMakeFiles/aufgabeb.dir/testaufgabeb.cc.i
+.PHONY : testaufgabeb.cc.i
+
+testaufgabeb.s: testaufgabeb.cc.s
+
+.PHONY : testaufgabeb.s
+
+# target to generate assembly for a file
+testaufgabeb.cc.s:
+	$(MAKE) -f CMakeFiles/aufgabeb.dir/build.make CMakeFiles/aufgabeb.dir/testaufgabeb.cc.s
+.PHONY : testaufgabeb.cc.s
 
 # Help Target
 help:
@@ -223,18 +274,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... testStatistik"
 	@echo "... rebuild_cache"
 	@echo "... letterTest"
-	@echo "... probe"
+	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... aufgabeb"
 	@echo "... letterTest.o"
 	@echo "... letterTest.i"
 	@echo "... letterTest.s"
+	@echo "... sanitizeword.o"
+	@echo "... sanitizeword.i"
+	@echo "... sanitizeword.s"
 	@echo "... testStatistik.o"
 	@echo "... testStatistik.i"
 	@echo "... testStatistik.s"
+	@echo "... testaufgabeb.o"
+	@echo "... testaufgabeb.i"
+	@echo "... testaufgabeb.s"
 .PHONY : help
 
 

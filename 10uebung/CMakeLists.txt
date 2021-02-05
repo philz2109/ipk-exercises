@@ -4,7 +4,9 @@ project(3-4 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(probe testStatistik.cc)
+set(CMAKE_BUILD_TYPE Debug)
+
+add_executable(aufgabeb testaufgabeb.cc sanitizeword.cc)
 
 enable_testing()
 

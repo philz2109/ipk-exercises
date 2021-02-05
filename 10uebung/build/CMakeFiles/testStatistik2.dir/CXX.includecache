@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blackfire/Documents/ipk-exercises/10uebung/frequencysource.hh
+algorithm
+-
+cctype
+-
+iostream
+-
+iterator
+-
+utility
+-
+
+/home/blackfire/Documents/ipk-exercises/10uebung/letterfrequencies.hh
+cctype
+-
+iostream
+-
+map
+-
+
+/home/blackfire/Documents/ipk-exercises/10uebung/testStatistik.cc
+letterfrequencies.hh
+/home/blackfire/Documents/ipk-exercises/10uebung/letterfrequencies.hh
+frequencysource.hh
+/home/blackfire/Documents/ipk-exercises/10uebung/frequencysource.hh
+fstream
+-
+

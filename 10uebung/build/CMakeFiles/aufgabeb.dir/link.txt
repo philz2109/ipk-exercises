@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/aufgabeb.dir/testaufgabeb.cc.o CMakeFiles/aufgabeb.dir/sanitizeword.cc.o  -o aufgabeb 

@@ -1,3 +1,4 @@
-letterTest 2 0.00989535
-testStatistik 1 0.0209885
+letterTest 10 0.00198389
+testStatistik 3 0
 ---
+testStatistik
