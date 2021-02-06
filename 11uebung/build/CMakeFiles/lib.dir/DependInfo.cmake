@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/blackfire/Documents/ipk-exercises/11uebung/io.cc" "/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/nbody.dir/io.cc.o"
-  "/home/blackfire/Documents/ipk-exercises/11uebung/nbody.cc" "/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/nbody.dir/nbody.cc.o"
+  "/home/blackfire/Documents/ipk-exercises/11uebung/basis.cc" "/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/lib.dir/basis.cc.o"
+  "/home/blackfire/Documents/ipk-exercises/11uebung/io.cc" "/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/lib.dir/io.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles/lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

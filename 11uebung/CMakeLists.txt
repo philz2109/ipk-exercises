@@ -8,6 +8,8 @@ project(
 
 set(CMAKE_BUILD_TYPE Debug)
 
-add_executable(nbody sdlwrapper.hh io.cc)
-target_link_libraries(nbody PUBLIC SDL2)
+add_library(lib sdlwrapper.hh io.cc basis.cc)
 
+add_executable(nbody nbody.cc sdlwrapper.hh io.cc)
+target_link_libraries(nbody PUBLIC SDL2)
+target_link_libraries(nbody PUBLIC lib)

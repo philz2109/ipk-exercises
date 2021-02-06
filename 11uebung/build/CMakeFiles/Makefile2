@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/blackfire/Documents/ipk-exercises/11uebung/build
 
 # The main recursive "all" target.
 all: CMakeFiles/nbody.dir/all
+all: CMakeFiles/lib.dir/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/nbody.dir/clean
+clean: CMakeFiles/lib.dir/clean
 
 .PHONY : clean
 
@@ -71,15 +73,15 @@ clean: CMakeFiles/nbody.dir/clean
 # Target rules for target CMakeFiles/nbody.dir
 
 # All Build rule for target.
-CMakeFiles/nbody.dir/all:
+CMakeFiles/nbody.dir/all: CMakeFiles/lib.dir/all
 	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/depend
 	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles --progress-num=1,2 "Built target nbody"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles --progress-num=4,5,6 "Built target nbody"
 .PHONY : CMakeFiles/nbody.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nbody.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nbody.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles 0
 .PHONY : CMakeFiles/nbody.dir/rule
@@ -93,6 +95,33 @@ nbody: CMakeFiles/nbody.dir/rule
 CMakeFiles/nbody.dir/clean:
 	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/clean
 .PHONY : CMakeFiles/nbody.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lib.dir
+
+# All Build rule for target.
+CMakeFiles/lib.dir/all:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/depend
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles --progress-num=1,2,3 "Built target lib"
+.PHONY : CMakeFiles/lib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blackfire/Documents/ipk-exercises/11uebung/build/CMakeFiles 0
+.PHONY : CMakeFiles/lib.dir/rule
+
+# Convenience name for target.
+lib: CMakeFiles/lib.dir/rule
+
+.PHONY : lib
+
+# clean rule for target.
+CMakeFiles/lib.dir/clean:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/clean
+.PHONY : CMakeFiles/lib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

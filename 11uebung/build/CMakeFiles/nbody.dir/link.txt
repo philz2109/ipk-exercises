@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/nbody.dir/io.cc.o  -o nbody  -lSDL2 
+/usr/bin/c++  -g   CMakeFiles/nbody.dir/nbody.cc.o CMakeFiles/nbody.dir/io.cc.o  -o nbody  -lSDL2 liblib.a 

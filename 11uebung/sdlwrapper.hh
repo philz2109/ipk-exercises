@@ -113,8 +113,3 @@ class SDLCanvas {
 int SDLCanvas::numCanvas = 0;
 
 #endif  // SDLCANVAS_HH
-
-int main(int argv, char* argc[]){
-
-	return 0;
-}

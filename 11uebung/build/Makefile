@@ -123,6 +123,46 @@ nbody/fast:
 	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/build
 .PHONY : nbody/fast
 
+#=============================================================================
+# Target rules for targets named lib
+
+# Build rule for target.
+lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib
+.PHONY : lib
+
+# fast build rule for target.
+lib/fast:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
+.PHONY : lib/fast
+
+basis.o: basis.cc.o
+
+.PHONY : basis.o
+
+# target to build an object file
+basis.cc.o:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/basis.cc.o
+.PHONY : basis.cc.o
+
+basis.i: basis.cc.i
+
+.PHONY : basis.i
+
+# target to preprocess a source file
+basis.cc.i:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/basis.cc.i
+.PHONY : basis.cc.i
+
+basis.s: basis.cc.s
+
+.PHONY : basis.s
+
+# target to generate assembly for a file
+basis.cc.s:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/basis.cc.s
+.PHONY : basis.cc.s
+
 io.o: io.cc.o
 
 .PHONY : io.o
@@ -130,6 +170,7 @@ io.o: io.cc.o
 # target to build an object file
 io.cc.o:
 	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/io.cc.o
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/io.cc.o
 .PHONY : io.cc.o
 
 io.i: io.cc.i
@@ -139,6 +180,7 @@ io.i: io.cc.i
 # target to preprocess a source file
 io.cc.i:
 	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/io.cc.i
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/io.cc.i
 .PHONY : io.cc.i
 
 io.s: io.cc.s
@@ -148,7 +190,35 @@ io.s: io.cc.s
 # target to generate assembly for a file
 io.cc.s:
 	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/io.cc.s
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/io.cc.s
 .PHONY : io.cc.s
+
+nbody.o: nbody.cc.o
+
+.PHONY : nbody.o
+
+# target to build an object file
+nbody.cc.o:
+	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/nbody.cc.o
+.PHONY : nbody.cc.o
+
+nbody.i: nbody.cc.i
+
+.PHONY : nbody.i
+
+# target to preprocess a source file
+nbody.cc.i:
+	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/nbody.cc.i
+.PHONY : nbody.cc.i
+
+nbody.s: nbody.cc.s
+
+.PHONY : nbody.s
+
+# target to generate assembly for a file
+nbody.cc.s:
+	$(MAKE) -f CMakeFiles/nbody.dir/build.make CMakeFiles/nbody.dir/nbody.cc.s
+.PHONY : nbody.cc.s
 
 # Help Target
 help:
@@ -159,9 +229,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... nbody"
+	@echo "... lib"
+	@echo "... basis.o"
+	@echo "... basis.i"
+	@echo "... basis.s"
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"
+	@echo "... nbody.o"
+	@echo "... nbody.i"
+	@echo "... nbody.s"
 .PHONY : help
 
 

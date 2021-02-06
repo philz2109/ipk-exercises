@@ -6,3 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/home/blackfire/Documents/ipk-exercises/11uebung/io.hh
+vector
+-
+
+/home/blackfire/Documents/ipk-exercises/11uebung/nbody.cc
+sdlwrapper.hh
+/home/blackfire/Documents/ipk-exercises/11uebung/sdlwrapper.hh
+io.hh
+/home/blackfire/Documents/ipk-exercises/11uebung/io.hh
+
+/home/blackfire/Documents/ipk-exercises/11uebung/sdlwrapper.hh
+array
+-
+iostream
+-
+string
+-
+SDL2/SDL.h
+/home/blackfire/Documents/ipk-exercises/11uebung/SDL2/SDL.h
+
