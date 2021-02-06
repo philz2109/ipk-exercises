@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/blackfire/Documents/ipk-exercises/11uebung/basis.hh
+iostream
+-
+array
+-
+
 /home/blackfire/Documents/ipk-exercises/11uebung/io.hh
 vector
 -
@@ -15,6 +21,12 @@ sdlwrapper.hh
 /home/blackfire/Documents/ipk-exercises/11uebung/sdlwrapper.hh
 io.hh
 /home/blackfire/Documents/ipk-exercises/11uebung/io.hh
+basis.hh
+/home/blackfire/Documents/ipk-exercises/11uebung/basis.hh
+string
+-
+vector
+-
 
 /home/blackfire/Documents/ipk-exercises/11uebung/sdlwrapper.hh
 array

@@ -4,6 +4,7 @@
 CMakeFiles/nbody.dir/io.cc.o: ../io.cc
 CMakeFiles/nbody.dir/io.cc.o: ../io.hh
 
+CMakeFiles/nbody.dir/nbody.cc.o: ../basis.hh
 CMakeFiles/nbody.dir/nbody.cc.o: ../io.hh
 CMakeFiles/nbody.dir/nbody.cc.o: ../nbody.cc
 CMakeFiles/nbody.dir/nbody.cc.o: ../sdlwrapper.hh
