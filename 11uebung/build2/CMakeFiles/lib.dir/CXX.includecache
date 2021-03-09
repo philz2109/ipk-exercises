@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/philz/Documents/ipk-exercises/11uebung/basis.cc
+basis.hh
+/home/philz/Documents/ipk-exercises/11uebung/basis.hh
+
+/home/philz/Documents/ipk-exercises/11uebung/basis.hh
+iostream
+-
+array
+-
+
+/home/philz/Documents/ipk-exercises/11uebung/io.cc
+io.hh
+/home/philz/Documents/ipk-exercises/11uebung/io.hh
+iostream
+-
+random
+-
+string
+-
+
+/home/philz/Documents/ipk-exercises/11uebung/io.hh
+vector
+-
+

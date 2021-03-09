@@ -1,0 +1,4 @@
+/home/philz/Documents/ipk-exercises/11uebung/build2/CMakeFiles/edit_cache.dir
+/home/philz/Documents/ipk-exercises/11uebung/build2/CMakeFiles/rebuild_cache.dir
+/home/philz/Documents/ipk-exercises/11uebung/build2/CMakeFiles/nbody.dir
+/home/philz/Documents/ipk-exercises/11uebung/build2/CMakeFiles/lib.dir
